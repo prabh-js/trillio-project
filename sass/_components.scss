@@ -1,0 +1,84 @@
+//////////////////////////////
+//LOGO
+.logo {
+    height: 3.25rem;
+    margin: 3rem;
+}
+
+////////////////////////////
+//SEARCH
+
+.search {
+    // background-color: orangered;
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: var(--color-grey-light-2);
+        border: none;
+        border-radius: 10rem;
+        padding: .7rem 2rem;
+        width: 90%;
+        transition: all .4s;
+        margin-right: -3.5rem;
+        &:focus {
+            outline: none;
+            width: 100%;
+            background-color: var(--color-grey-light-3);
+        }
+        &::-webkit-input-placeholder {
+            color: var(--color-grey-light-4);
+            font-weight: 100;
+        }
+        
+    }
+
+    &__input:focus + &__button{
+       background-color: var(--color-grey-light-3);
+     }
+    &__button {
+        border: none;
+        background-color: var(--color-grey-light-2);
+        &:focus {
+            outline: none;
+        }
+
+    }
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: var(--color-grey-dark-3);
+    }
+}
+.user-nav {
+    background-color: greenyellow;
+    // align-self: flex-start;
+    display: inline-block;
+    float: left;
+    &__icon-box {
+
+    }
+    &__icon {
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+    &__notification {
+
+    }
+    &__user {
+
+    }
+    &__user-photo {
+        height: 3.75rem;
+        width: 3.75rem;
+        border-radius: 50%;
+    }
+    &__user-name {
+
+    }
+}
