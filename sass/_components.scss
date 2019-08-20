@@ -113,7 +113,7 @@
         text-transform: uppercase;
         position: relative;
         color: var(--color-primary);
-        font-size: 1rem;
+        font-size: 1.5rem;
         
     }
     &-menu-item--1:hover::before, &-menu-item--2:hover::before, &-menu-item--3:hover::before {
@@ -231,6 +231,11 @@
     display: flex;
     &__photo {
         width: 100%;
+        transition: all .4s;
+    }
+    &__photo:hover {
+        filter: blur(2px);
+        cursor: pointer;
     }
 }
 .overview {
