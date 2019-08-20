@@ -129,6 +129,36 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+  .user-nav__user {
+    position: relative; }
+    .user-nav__user-menu {
+      display: none; }
+    .user-nav__user-menu-list {
+      list-style: none;
+      width: 100%; }
+    .user-nav__user-menu-item--1, .user-nav__user-menu-item--2, .user-nav__user-menu-item--3 {
+      border: 1px solid #ccc;
+      border-bottom: none;
+      border-right: none;
+      padding: 1rem 1.5rem;
+      text-transform: uppercase;
+      position: relative; }
+    .user-nav__user-menu-item--1:hover::before, .user-nav__user-menu-item--2:hover::before, .user-nav__user-menu-item--3:hover::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      background-color: var(--color-primary); }
+  .user-nav__user:hover .user-nav__user-menu {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-grey-light-2);
+    align-self: stretch;
+    width: 100%; }
   .user-nav__user-photo {
     height: 3.75rem;
     width: 3.75rem;

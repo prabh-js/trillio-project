@@ -97,7 +97,43 @@
 
     }
     &__user {
+        position: relative;
+    &-menu {
+        display: none;
     }
+    &-menu-list {
+        list-style: none;
+        width: 100%;
+    }
+    &-menu-item--1, &-menu-item--2, &-menu-item--3 {
+        border: 1px solid #ccc;
+        border-bottom: none;
+        border-right: none;
+        padding: 1rem 1.5rem;
+        text-transform: uppercase;
+        position: relative;
+        
+    }
+    &-menu-item--1:hover::before, &-menu-item--2:hover::before, &-menu-item--3:hover::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background-color: var(--color-primary);
+    }
+    }
+    
+    &__user:hover &__user-menu {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--color-grey-light-2);
+        align-self: stretch;       
+        width: 100%;
+    } 
     &__user-photo {
         height: 3.75rem;
         width: 3.75rem;
