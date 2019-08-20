@@ -112,6 +112,8 @@
         padding: 1rem 1.5rem;
         text-transform: uppercase;
         position: relative;
+        color: var(--color-primary);
+        font-size: 1rem;
         
     }
     &-menu-item--1:hover::before, &-menu-item--2:hover::before, &-menu-item--3:hover::before {
