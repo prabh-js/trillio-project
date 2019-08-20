@@ -144,7 +144,7 @@ body {
       text-transform: uppercase;
       position: relative;
       color: var(--color-primary);
-      font-size: 1rem; }
+      font-size: 1.5rem; }
     .user-nav__user-menu-item--1:hover::before, .user-nav__user-menu-item--2:hover::before, .user-nav__user-menu-item--3:hover::before {
       content: "";
       position: absolute;
@@ -238,7 +238,11 @@ body {
 .gallery {
   display: flex; }
   .gallery__photo {
-    width: 100%; }
+    width: 100%;
+    transition: all .4s; }
+  .gallery__photo:hover {
+    filter: blur(2px);
+    cursor: pointer; }
 
 .overview {
   display: flex;
